@@ -1,0 +1,67 @@
+<html>
+    <title> Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script> 
+    function myfunction()
+{
+    // var name = ("container", "uname");
+    // alert("Please enter your name.");
+
+    var name = document.getElementById('uname');
+    // var name = document.getElement("form.container.uname")
+
+    var email = document.getElementById("email");
+    var password = document.getElementById("password");
+
+
+    if(name.value == "")
+    {
+        alert("Please enter your name.");
+        name.focus();
+        return false;
+    }
+
+    if(email.value== "")
+    {
+        alert("Please enter your email.");
+        email.focus();
+        return false;
+    }
+
+    if(password.value== "")
+    {
+        alert("Please enter your password.");
+        password.focus();
+        return false;
+    }
+       
+    return true;
+}
+
+    
+    </script>
+    
+    <form name="LoginForm"  onsubmit="return myfunction()" action='home.html' method="post">
+        <div class ="imgcontainer">
+            <img src="https://storiesflistgv2.blob.core.windows.net/stories/2019/03/article_banner_press_release_26_03_19_v1-01.jpg" alt="Logo" class="logo" width="500px" height="210px">
+        </div>
+
+        <!-- <div class="container"> -->
+            <p><b>Username</b></p>
+            <input type="text" placeholder="Enter Username" id="uname" >
+                
+            <p><b>Email id</b></p>
+            <input type="text" placeholder="Enter email" id="email" >
+
+            <p><b>Password</b></p>
+            <input type="password" placeholder="Enter Password" id="password" >
+            <button type="submit" value="send" name="Submit">Login</button>
+            <a style="margin-inline-start: 47%;">OR</a>
+            <button class="button2" type="submit" value="send" name="OTP">Request OTP</button>
+        <!-- </div> -->
+            <a href="https://www.flipkart.com/account/login?signup=true" style="color: blue; font-weight: 800;">New to Flipkart? Create an account</a>
+   </form>
+   
+
+
+</html>
