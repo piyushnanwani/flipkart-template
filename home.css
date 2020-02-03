@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 10;
+  }
+  
+  
+  .row{
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(238, 238, 238);
+
+  }
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    flex: 10%;
+    width: 20%;
+    padding: 2%;
+  }
+  .column:hover{
+    transition: transform .2s;
+    transform: scale(1.08);
+    cursor: pointer;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+  /* Code for drop down nav bar */
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover a {
+    background-color: #e9e9e9;
+}
+
+.aclass {
+    padding: 12px 16px;
+ }
+
+ .flex-container {
+   display: flex;
+   flex-wrap: wrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+@media (max-width:800px){
+  .column{
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width:600px){
+  .column{
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.mySlides {display:none;}

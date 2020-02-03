@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(158, 236, 255);
+}
+    /*set border to the form*/ 
+      
+    form { 
+        border: 3px solid #b2adff;
+        position:relative;
+        left: 20%;
+        top:5%;
+        height: 89%; 
+        width: 45%; 
+        padding: 30px;
+        background-color:rgb(250, 248, 248);
+    } 
+    /*assign full width inputs*/ 
+      
+    input[type=text], 
+    input[type=password] { 
+        width: 100%; 
+        padding: 12px 20px; 
+        margin: 8px 0; 
+        display: inline-block; 
+        border: 1px solid #ccc; 
+        box-sizing: border-box; 
+    } 
+    /*set a style for the buttons*/ 
+      
+    button { 
+        background-color: rgb(228, 118, 55); 
+        color: white; 
+        padding: 14px 20px; 
+        margin: 8px 0; 
+        border: none; 
+        cursor: pointer; 
+        width: 100%; 
+    } 
+    /* set a hover effect for the button*/ 
+    
+    button:hover { 
+        opacity: 0.8; 
+    } 
+    
+    .button2 { 
+        background-color: rgb(255, 255, 255); 
+        color: rgb(2, 26, 238); 
+        padding: 14px 20px; 
+        margin: 8px 0; 
+        border: none; 
+        cursor: pointer; 
+        width: 100%; 
+        box-shadow: black;
+    } 
+    /* set a hover effect for the button*/ 
+      
+    button2:hover { 
+        opacity: 0.8; 
+    } 
+      
+       
+    .imgcontainer { 
+        text-align: center; 
+        margin: 24px 0 12px 0; 
+    } 
+    /*set image properties*/ 
+      
+    img.avatar { 
+        width: 40%; 
+    } 
+    /*set padding to the container*/ 
+      
+    .container { 
+        padding: 16px; 
+    } 
+    /*set the forgot password text*/ 
+      
+    span.psw { 
+        float: right; 
+        padding-top: 16px; 
+    } 
+    /*set styles for span and cancel button on small screens*/ 
+      
+    .mySlides {display:none;}
